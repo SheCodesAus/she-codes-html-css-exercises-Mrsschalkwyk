@@ -1,31 +1,66 @@
+body{
+    background-color: beige;
+}
+
+
 .box {
+    margin: 5px;
 }
 
 .green-box {
+    background-color: lightgreen;
+    height: 100px;
+
 }
 
 .blue-box {
+    background-color: lightblue;
+    height: 200px;
+
 }
 
 .grey-box {
+    background-color: lightcoral;
+    height: 75px;
+
 }
 
-/*** Media Queries Below ***/
+/*** Media Queries Below  ***/
 
 @media (min-width: 600px) {
+
+
     .green-box {
+       height: 200px;
+
+
+
     }
     .blue-box {
+        height: 150px;
+
     }
     .grey-box {
+        width: calc(100% / 2 - 10px);
+        display: inline-block;
     }
 }
 
 @media (min-width: 900px) {
     .green-box {
+        height: 300px;
     }
+
+
     .blue-box {
-    }
+     
+width: calc(100% / 3 - 10px);
+display: inline-block;
+height: 300px;
+ }
+
     .grey-box {
+        width: calc(100% / 4 - 10px);
+height: 200px;
     }
 }

@@ -13,6 +13,13 @@ body {
     font-size: 1rem;
     font-weight: bold;
     height: calc(100% - 14px);
+    /* horizontal-alignment*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        /* vertical-alignment*/
+
+    align-content: center;
 }
 
 div {
@@ -21,3 +28,32 @@ div {
 }
 
 /*** Your code here ***/
+
+/*
+.demo-div{
+    flex-grow: 1;
+    Use to make one div bigger than the others
+}
+*/
+
+#div-1{
+    flex-basis: 20%;
+}
+
+#div-2{
+    flex-basis: 10%;
+    order:1;
+    /*** change the order of the div manualy. Will go from lows to highest no 
+    matter what the numbers are. Always starts with 0 and goes higher
+    Screne readers will not respond to the order they will read the defult
+    html.
+    the divs that are not reordered will be 0.
+
+    Dont use this unless its the last resort
+
+    order is used for retreving for retreiving data from a data base and 
+    displays in the way that you need it
+    
+    ***/
+
+}
