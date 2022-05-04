@@ -6,6 +6,7 @@
         <meta name="description" content="JavaScript Demo">
         <meta name="author" content="She Codes">
         <link rel="stylesheet" href="styles.css">
+
     </head>
     
     <body>
@@ -19,12 +20,17 @@
 
             <div id="greeting" class="component">
                 <h2>Greeting</h2>
+
+
+
                 <form>
                     <div class="form-item">
                         <label for="name">What is your name?</label>
                         <input type="text" id="name" name="name">
                     </div>
-                    <input type="button" value="submit">
+                    <input type="button" onclick="showName()"value="submit">
+               <p id="greeting-text"></p>
+               
                 </form>
             </div>
 
@@ -32,6 +38,9 @@
                 <h2>Background Colour</h2>
                 <p>Pick a colour:</p>
                 <input type="button" onclick="changeColour('#f74850')" value="red">
+                <input type="button" onclick="changeColour('#2f78f2')" value="blue">
+                <input type="button" onclick="changeColour('#194d33')" value="green">
+                <input type="button" onclick="changeColour('#e91e63')" value="pink">
                 <input type="button" onclick="resetColour()" value="reset">
             </div>
 
@@ -45,5 +54,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
